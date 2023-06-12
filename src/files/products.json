@@ -13,19 +13,6 @@
     "id": 1
   },
   {
-    "title": "Celular",
-    "description": "Celular Smartphone",
-    "code": "002",
-    "price": 350,
-    "stock": 20,
-    "category": "Celular",
-    "thumbnails": [
-      null
-    ],
-    "status": true,
-    "id": 2
-  },
-  {
     "title": "Televisor",
     "description": "Televisor SmartTV",
     "code": "003",
@@ -39,16 +26,29 @@
     "id": 3
   },
   {
-    "title": "Lavarropa",
-    "description": "Electrodoméstico lavarropa",
-    "code": "005",
-    "price": 699,
-    "stock": 10,
-    "category": "Electrodoméstico",
+    "title": "Celular",
+    "description": "Smartphone",
+    "code": "002",
+    "price": 599,
+    "stock": 20,
+    "category": "Celular",
     "thumbnails": [
       []
     ],
     "status": "true",
     "id": 4
+  },
+  {
+    "title": "Lavarropa",
+    "description": "Electrodoméstico lavarropa",
+    "code": "007",
+    "price": 699,
+    "stock": 20,
+    "category": "Electrodoméstico",
+    "thumbnails": [
+      []
+    ],
+    "status": "true",
+    "id": 5
   }
 ]

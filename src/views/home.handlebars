@@ -1,17 +1,17 @@
 <div>
-    <div>
-        <h1>Productos</h1>
-        <div>
+    <div class="cardContainer">
+        <h1 class="homeTitle">Productos</h1>
+        <div class="cardProduct">
             {{#each products}}
-                <ul>
-                    <li>Title:{{this.title}}</li>
-                    <li>Description: {{this.description}}</li>
-                    <li>Code: {{this.code}}</li>
-                    <li>Price: {{this.price}}</li>
-                    <li>Status: {{this.status}}</li>
-                    <li>Stock: {{this.stock}}</li>
-                    <li>Category: {{this.category}}</li>
-                    <li>Id: {{this.id}}</li>
+                <ul class="cardItem">
+                    <li><span>Title:</span> {{this.title}}</li>
+                    <li><span>Description:</span> {{this.description}}</li>
+                    <li><span>Code:</span> {{this.code}}</li>
+                    <li><span>Price:</span> {{this.price}}</li>
+                    <li><span>Status:</span> {{this.status}}</li>
+                    <li><span>Stock:</span> {{this.stock}}</li>
+                    <li><span>Category:</span> {{this.category}}</li>
+                    <li><span>Id:</span> {{this.id}}</li>
                 </ul>
             {{/each}}
         </div>

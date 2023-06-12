@@ -2,6 +2,7 @@ const socket = io()
 
 const formProduct = document.getElementById('formProduct')
 const container = document.getElementById('container')
+//let deleteButtons = document.getElementsByClassName('eliminar')
 
 socket.on('products', (data) => {
   container.innerHTML = ``
@@ -23,7 +24,9 @@ socket.on('products', (data) => {
           <li>Category: ${prod.category}</li>
           <li>Id: ${prod.id}</li>
         </ul>
-        <button class='eliminar' id=${prod.id}>Eliminar</button>
+        <div class='eliminarContainer'>
+          <button class='eliminar' id=${prod.id}>Eliminar</button>
+        </div>
         `
         container.appendChild(div)
     })

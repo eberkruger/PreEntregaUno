@@ -1,15 +1,43 @@
-body {
-  background-color: #ccc;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
-h1 {
-  width: 100%;
+.homeTitle {
   text-align: center;
+  padding: 40px 0 40px 0;
+  font-weight: 500;
+  text-transform: uppercase;
 }
+
+.cardProduct{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 50px;
+}
+
+.cardItem {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 6px;
+  max-width: 250px;
+  height: auto;
+}
+
+span {
+  font-weight: 600;
+}
+
 
 form {
   width: 300px;
@@ -26,47 +54,70 @@ form input {
 }
 
 .products {
-  border: 2px solid black;
+  border: 1px solid black;
   background-color: white;
   border-radius: 6px;
   width: 300px;
+  box-sizing: border-box;
+}
+
+.products li {
+  padding: 3px;
 }
 
 #container {
-  margin-top: 2rem;
-  width: 100%;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 20px;
+  padding: 50px;
 }
 
 .external {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  padding: 20px;
+}
+
+.addProductTitle {
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 15px;
 }
 
 button {
-  background-color: green;
+  background-color: rgb(184, 181, 181);
   width: 300px;
   height: 30px;
   border-radius: 6px;
-  border: solid 1px green;
+  border: solid 1px black;
   font-size: 1rem;
   font-weight: 500;
-  transition: .3s;
+  text-transform: uppercase;
+  transition: all .3s ease;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: white;
+  background-color: rgb(86, 166, 197);
+  border:none;
+  color: white;
 }
 
+.eliminarContainer{
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
 .eliminar {
-  width: 80px;
+  max-width: 50%;
+  background-color: rgb(184, 181, 181);
+  font-weight: 500;
+  transition: all .3s ease;
+}
+
+.eliminar:hover{
   background-color: red;
-  font-weight: 600;
+  color: white;
 }
