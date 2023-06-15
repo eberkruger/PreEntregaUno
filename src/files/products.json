@@ -13,19 +13,6 @@
     "id": 1
   },
   {
-    "title": "Televisor",
-    "description": "Televisor SmartTV",
-    "code": "003",
-    "price": 600,
-    "stock": 20,
-    "category": "Televisor",
-    "thumbnails": [
-      null
-    ],
-    "status": true,
-    "id": 3
-  },
-  {
     "title": "Celular",
     "description": "Smartphone",
     "code": "002",
@@ -50,5 +37,31 @@
     ],
     "status": "true",
     "id": 5
+  },
+  {
+    "title": "Tablet",
+    "description": "Tableta",
+    "code": "0022",
+    "price": 699,
+    "stock": 10,
+    "category": "Tablet",
+    "thumbnails": [
+      []
+    ],
+    "status": "true",
+    "id": 6
+  },
+  {
+    "title": "Televisor",
+    "description": "Televisor 4k",
+    "code": "007",
+    "price": 999,
+    "stock": 10,
+    "category": "Televisor",
+    "thumbnails": [
+      []
+    ],
+    "status": "true",
+    "id": 7
   }
 ]

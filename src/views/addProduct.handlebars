@@ -1,18 +1,18 @@
 <div class="external">
     <h1 class="addProductTitle">Agregar productos</h1>
     <form id="formProduct">
-        <input name="title" placeholder="Title">
-        <input name="description" placeholder="Description">
-        <input name="code" placeholder="Code">
-        <input name="price" placeholder="Price">
+        <input name="title" placeholder="Title" required>
+        <input name="description" placeholder="Description" required>
+        <input name="code" placeholder="Code" required>
+        <input name="price" placeholder="Price" required>
         <div>
             <label>True</label>
             <input type="radio" name="status" value="true" checked>  
             <label>False</label>
             <input type="radio" name="status" value="false">
         </div>
-        <input name="stock" placeholder="Stock">
-        <input name="category" placeholder="Category">
+        <input name="stock" placeholder="Stock" required>
+        <input name="category" placeholder="Category" required>
         <button>Agregar</button>
     </form>
 

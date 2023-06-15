@@ -2,7 +2,6 @@ const socket = io()
 
 const formProduct = document.getElementById('formProduct')
 const container = document.getElementById('container')
-//let deleteButtons = document.getElementsByClassName('eliminar')
 
 socket.on('products', (data) => {
   container.innerHTML = ``
@@ -14,7 +13,7 @@ socket.on('products', (data) => {
       const div = document.createElement('div')
       div.classList.add('products')
       div.innerHTML = `
-        <ul>
+        <ul class='itemsContainer'>
           <li>Title: ${prod.title}</li>
           <li>Description: ${prod.description}</li>
           <li>Code: ${prod.code}</li>
@@ -38,9 +37,14 @@ formProduct.addEventListener('submit', (e) => {
   const product = Object.fromEntries(new FormData(e.target))
   product.thumbnails = []
   socket.emit('post', product)
+
+  formProduct.reset()
 })
 
 container.addEventListener('click', (e) => {
   e.preventDefault()
-  socket.emit('delete', e.target.id)
+  if (e.target.classList.contains('eliminar')) {
+    socket.emit('delete', e.target.id)
+    console.log(e.target.id)
+  }
 })
