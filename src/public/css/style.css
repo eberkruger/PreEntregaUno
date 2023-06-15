@@ -19,16 +19,16 @@
 
 .cardProduct {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%;
   gap: 30px;
   padding: 30px;
 }
 
 .cardItem {
-  display: flex;
+  flex: 1;
   flex-direction: column;
-  flex-wrap: wrap;
   padding: 12px;
   border: 1px solid black;
   border-radius: 6px;
@@ -37,7 +37,6 @@
 span {
   font-weight: 600;
 }
-
 
 form {
   width: 300px;
